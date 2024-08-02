@@ -5,17 +5,15 @@ import javax.swing.*;
 public class EjemploExcepciones {
     public static void main(String[] args) {
         Calculadora cal = new Calculadora();
-        String valor = JOptionPane.showInputDialog(null, "Ingresa un entero");
-        int divisor;
-
+        String numerador = JOptionPane.showInputDialog(null, "Ingresa numerador");
+        String denominador = JOptionPane.showInputDialog(null, "Ingresa denominador");
 
         try {
-            divisor = Integer.parseInt(valor);
-            double division = cal.dividir(10,divisor);
-            System.out.println(division);
-        } catch (NumberFormatException e) {
-            System.out.println("Hubo un error con el formato del divisor, su valor es " + "\'" + valor + "\'");
-            main(args);
+            double division2 = cal.dividir(numerador,denominador);
+            System.out.println("division2 = " + division2);
+        } catch (FormatoNumeroException e) {
+            System.out.println("Se detecto un problema al convertir los formatos del numerador o denominador.");
+            e.printStackTrace(System.out);
         } catch (DivisionPorCeroException e) {
             System.out.println("Hubo un error con el divisor, su valor es 0");
         }

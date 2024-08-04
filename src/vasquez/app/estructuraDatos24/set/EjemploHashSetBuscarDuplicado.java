@@ -1,4 +1,4 @@
-package vasquez.app.estructuraDatos24;
+package vasquez.app.estructuraDatos24.set;
 
 import java.util.*;
 

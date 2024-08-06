@@ -38,11 +38,11 @@ public class EjemploHashSetUnicidad { //Obs: Set puede usar todos las iteracione
             Alumno a = it .next();
             System.out.println(a);
         }
-
+        /*
         do {
             Alumno a = it .next();
             System.out.println(a);
-        } while (it.hasNext());
+        } while (it.hasNext()); */
 
         System.out.println("Iterando usando Stream forEach");
         sa.forEach(System.out::println);

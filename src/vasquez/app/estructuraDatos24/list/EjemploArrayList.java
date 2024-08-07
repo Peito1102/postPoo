@@ -1,4 +1,4 @@
-package vasquez.app.estructuraDatos24.set;
+package vasquez.app.estructuraDatos24.list;
 
 import vasquez.app.estructuraDatos24.modelo.Alumno;
 

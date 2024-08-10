@@ -65,17 +65,36 @@ public class EjemploHashMap {
         System.out.println("3 formas de mostrar llave y valor.");
         System.out.println("Forma usando el Map EntrySet");
         for (Map.Entry<String, Object> par: persona.entrySet()) {
-            System.out.println(par.getKey() + " => " + par.getValue());
+            Object va = par.getValue();
+            if (va instanceof Map) {
+                Map<String,String> direccionMap = (Map<String,String>)va;
+                for (Map.Entry<String, String> parDir: direccionMap.entrySet()) {
+                    System.out.println(parDir.getKey() + " => "+ parDir.getValue());
+                }
+
+            } else {
+                System.out.println(par.getKey() + " => " + va);
+            }
         }
 
         System.out.println("Forma usando el Set");
         for (Object s : persona.keySet()){
-            System.out.println(s + " => " + persona.get(s));
+            Object v = persona.get(s);
+            if (v instanceof Map) {
+                String nom = (String) persona.get("nombre");
+                Map<String,String> direccionMap = (Map<String,String>)v;
+                System.out.println("El pais de "+  nom + ": " + direccionMap.get("pais"));
+                System.out.println("El estado de "+  nom + ": " + direccionMap.get("estado"));
+                System.out.println("El ciudad de "+  nom + ": " + direccionMap.get("ciudad"));
+
+            } else {
+                System.out.println(s + " => " + persona.get(s));
+            }
         }
 
         System.out.println("Forma lambda");
-        persona.forEach((llave, v) -> {
-            System.out.println(llave + " => " + persona.get(v));
+        persona.forEach((llave,v) -> {
+            System.out.println(llave + " => " + v);
         });
 
         System.out.println("total : " + persona.size());

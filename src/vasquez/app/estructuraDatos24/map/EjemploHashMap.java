@@ -2,7 +2,7 @@ package vasquez.app.estructuraDatos24.map;
 
 import java.util.*;
 
-public class EjemploHashMap {
+public class EjemploHashMap extends Thread{
     public static void main(String[] args) {
         HashMap<String,Object> persona = new HashMap<>();
         //si la llave se repite, se reemplaza por el ultimo agregado repetido

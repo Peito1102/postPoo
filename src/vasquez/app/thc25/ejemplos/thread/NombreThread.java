@@ -1,4 +1,4 @@
-package vasquez.app.thc25.thread;
+package vasquez.app.thc25.ejemplos.thread;
 
 public class NombreThread extends Thread {
     public NombreThread(String name) {

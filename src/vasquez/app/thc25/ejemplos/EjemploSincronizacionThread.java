@@ -1,6 +1,6 @@
-package vasquez.app.thc25;
+package vasquez.app.thc25.ejemplos;
 
-import vasquez.app.thc25.runnable.ImprimirFrases;
+import vasquez.app.thc25.ejemplos.runnable.ImprimirFrases;
 
 public class EjemploSincronizacionThread {
     public static void main(String[] args) throws InterruptedException {

@@ -1,6 +1,6 @@
-package vasquez.app.thc25.runnable;
+package vasquez.app.thc25.ejemplos.runnable;
 
-import static vasquez.app.thc25.EjemploSincronizacionThread.imprimirFrases;
+import static vasquez.app.thc25.ejemplos.EjemploSincronizacionThread.imprimirFrases;
 
 public class ImprimirFrases implements Runnable {
     private String frase1, frase2;

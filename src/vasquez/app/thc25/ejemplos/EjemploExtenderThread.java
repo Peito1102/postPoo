@@ -1,6 +1,6 @@
-package vasquez.app.thc25;
+package vasquez.app.thc25.ejemplos;
 
-import vasquez.app.thc25.thread.NombreThread;
+import vasquez.app.thc25.ejemplos.thread.NombreThread;
 
 public class EjemploExtenderThread {
     public static void main(String[] args) throws InterruptedException {

@@ -1,4 +1,4 @@
-package vasquez.app.thc25.runnable;
+package vasquez.app.thc25.ejemplos.runnable;
 
 public class ViajeTarea implements Runnable {
     private String nombre;

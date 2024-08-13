@@ -1,6 +1,4 @@
-package vasquez.app.thc25;
-
-import vasquez.app.thc25.runnable.ViajeTarea;
+package vasquez.app.thc25.ejemplos;
 
 public class EjemploInterfaceRunnableJava8 {
     public static void main(String[] args) throws InterruptedException {

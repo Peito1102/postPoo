@@ -4,6 +4,7 @@ import java.util.concurrent.*;
 
 public class EjemploExecuterFuture {
     public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
+        //Executors.newSingleThreadExecutor() solo mete un tarea a ejecucion, ejecuta 1 x 1
         ExecutorService executor = Executors.newSingleThreadExecutor();
         Callable<String> tarea = () -> {
             System.out.println("Inicio de la tarea... ");

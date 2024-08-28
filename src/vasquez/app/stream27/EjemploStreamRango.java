@@ -9,7 +9,7 @@ public class EjemploStreamRango {
         IntStream num = IntStream.range(1,6).peek(System.out::println);
 
         //int resultado = num.reduce(0, Integer::sum);
-        int resultado = num.sum();
+        //int resultado = num.sum();
         //System.out.println(resultado);
 
         IntSummaryStatistics stats = num.summaryStatistics();
@@ -19,6 +19,6 @@ public class EjemploStreamRango {
         System.out.println("promedio: " + stats.getAverage());
         System.out.println("total: " + stats.getCount());
 
-
+        //obs: solo se puede usar una funcion terminal por Stream
     }
 }

@@ -3,6 +3,7 @@ package vasquez.app.optional28.models;
 public class Computador {
     private String nombre;
     private String modelo;
+    private Procesador procesador;
 
     public Computador(String nombre, String modelo) {
         this.nombre = nombre;
@@ -26,6 +27,14 @@ public class Computador {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public Procesador getProcesador() {
+        return procesador;
+    }
+
+    public void setProcesador(Procesador procesador) {
+        this.procesador = procesador;
     }
 
     @Override

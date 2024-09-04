@@ -5,7 +5,7 @@ import vasquez.app.anotacion30.JsonAtributo;
 import java.time.LocalDate;
 
 public class Producto {
-    @JsonAtributo
+    @JsonAtributo(nombre = "descripcion",capitalizar = true)
     private String nombre;
     @JsonAtributo
     private Long precio;

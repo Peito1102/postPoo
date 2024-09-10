@@ -1,4 +1,7 @@
-package vasquez.app.patronesDisenio32.composite;
+package vasquez.app.patronesDisenio32.composite.ejemplos;
+
+import vasquez.app.patronesDisenio32.composite.Archivo;
+import vasquez.app.patronesDisenio32.composite.Directorio;
 
 public class EjemploComposite {
     public static void main(String[] args) {
